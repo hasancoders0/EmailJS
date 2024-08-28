@@ -69,7 +69,7 @@
 <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script>
     // Initialize EmailJS with your user ID
-    emailjs.init("YOUR_USER_ID");
+    emailjs.init("mT9UZYhrCosMByOh4");
 
     document.getElementById("contact-form").addEventListener("submit", function(event) {
         event.preventDefault();
@@ -79,7 +79,7 @@
         messageDiv.textContent = "Sending message...";
 
         // Send the form using EmailJS
-        emailjs.sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", this)
+        emailjs.sendForm("service_194fn4g", "template_d1ztpmx", this)
             .then(function(response) {
                 console.log("SUCCESS!", response.status, response.text);
                 messageDiv.textContent = "Message sent successfully!";
